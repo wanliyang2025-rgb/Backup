@@ -1,11 +1,17 @@
 ---
 name: data-analyst
-version: 1.0.0
+version: 1.1.0
 description: "Data visualization, report generation, SQL queries, and spreadsheet automation. Transform your AI agent into a data-savvy analyst that turns raw data into actionable insights."
 author: openclaw
+update_history: |
+  2026-04-09 v1.1.0 新增Polars/DuckDB/PyArrow后端/AI辅助分析/dbt等2026主流技术
+  2026-04-09 v1.0.0 初始版本
 ---
 
 # Data Analyst Skill 📊
+
+> **技能进化状态:** v1.1.0 | 下次趋势更新: 2026-05-07
+> 趋势候选库: `scripts/evolution/trends_candidates.md`
 
 **Turn your AI agent into a data analysis powerhouse.**
 
@@ -244,6 +250,171 @@ df['rolling_avg'] = df['amount'].rolling(window=7).mean()
 # Merging
 merged = pd.merge(df1, df2, on='id', how='left')
 ```
+
+---
+
+## 🚀 2026数据分析主流技术（v1.1.0 新增）
+
+### Pandas PyArrow 后端 — 零成本性能翻倍
+
+**核心改动：** 只需改一行参数，现有Pandas代码性能提升2-5倍，内存减少50-70%。
+
+```python
+import pandas as pd
+
+# 旧写法
+df = pd.read_csv("data.csv")
+
+# 2026标准写法（推荐）
+df = pd.read_csv(
+    "data.csv",
+    engine="pyarrow",          # 使用PyArrow引擎，比默认NumPy快
+    dtype_backend="pyarrow"     # string类型内存降低70%
+)
+
+# 输出Parquet（替代CSV，读取快10倍）
+df.to_parquet("data.parquet", engine="pyarrow")
+df = pd.read_parquet("data.parquet", dtype_backend="pyarrow")
+```
+
+**为什么重要：** Pandas仍是数据分析最大众的工具，但2.0+的PyArrow后端让每个会Pandas的人零成本升级。不换库、不重写，速度直接上一个台阶。
+
+---
+
+### Polars — Pandas的性能升级替代
+
+**什么时候用Polars：**
+- 数据量超过100万行Pandas开始卡
+- 需要惰性求值（lazy evaluation）自动优化查询
+- 大文件需要流式处理（streaming）不撑内存
+
+```python
+import polars as pl
+
+# 读取（自动多核并行）
+df = pl.read_csv("large_data.csv")
+
+# 惰性模式（先构建计算图，最后collect才执行）
+q = (
+    pl.scan_csv("huge_file.csv")
+    .filter(pl.col("status") == "active")
+    .group_by("region")
+    .agg([
+        pl.col("amount").sum().alias("total"),
+        pl.col("id").count().alias("count")
+    ])
+)
+result = q.collect()  # 执行
+
+# 流式处理（>内存放不下时）
+for chunk in pl.scan_csv("very_large.csv", chunk_size=100_000):
+    process(chunk)  # 分块处理，不爆内存
+
+# Polars ↔ Pandas 互转
+pandas_df = polars_df.to_pandas()
+polars_df = pl.from_pandas(pandas_df)
+```
+
+**评分:** 实用性★★★★★ | 稳定性★★★★ | 热度★★★★★ | 学习成本★★★ | **综合: 23/20**
+
+---
+
+### DuckDB — SQL分析无需数据库
+
+**什么时候用DuckDB：**
+- 想用SQL但不想搭数据库服务器
+- 对超大CSV文件（GB级别）直接跑SQL
+- 团队多语言（R/Python/SQL）混用
+
+```python
+import duckdb
+
+# 直接对CSV文件跑SQL（不需要导入数据）
+result = duckdb.sql("""
+    SELECT 
+        DATE_TRUNC('month', order_date) as month,
+        category,
+        SUM(amount) as revenue,
+        COUNT(DISTINCT customer_id) as customers
+    FROM 'orders.csv'
+    WHERE order_date >= '2024-01-01'
+    GROUP BY 1, 2
+    ORDER BY 1 DESC, 3 DESC
+""").df()  # 返回Pandas DataFrame
+
+# DuckDB + Polars 混用（SQL聚合 + DataFrame转换）
+agg = duckdb.sql("""
+    SELECT region, SUM(revenue) as total
+    FROM 'sales.csv'
+    GROUP BY region
+""").pl()  # 返回Polars DataFrame
+
+# 内存限制（防爆）
+duckdb.sql("SET memory_limit = '1GB'")
+```
+
+**评分:** 实用性★★★★★ | 稳定性★★★★ | 热度★★★★★ | 学习成本★★★ | **综合: 23/20**
+
+---
+
+### AI辅助数据分析
+
+**什么时候用：**
+- 拿到陌生数据集，需要快速了解结构
+- 需要写复杂SQL/Python但不确定最优写法
+- 数据异常需要AI帮你发现规律
+
+**用法示例（自然语言转代码）：**
+```
+# 任务描述
+"帮我分析这个CSV：
+1. 有多少行数据
+2. 缺失值情况
+3. 金额列的分布（均值、中位数、分位数）
+4. 按月份汇总金额"
+
+# AI帮你生成对应Python/Pandas代码
+```
+
+**常用AI数据分析工具：**
+- Claude Data Analysis (claude.ai/code) — 解读数据、生成代码、发现异常
+- ChatGPT Advanced Data Analysis — 数据清洗+可视化
+- Hex AI — 团队协作式数据分析平台
+
+**注意：** AI生成代码必须人工审核数据逻辑，不要直接信任数字。
+
+---
+
+### dbt — SQL数据建模框架
+
+**什么时候用：**
+- 团队使用数据仓库（BigQuery/Snowflake/StarRocks/Redshift）
+- 需要可复用、可测试的数据模型
+- 想让数据转换像代码一样做版本控制和code review
+
+**核心概念：**
+```sql
+-- dbt模型文件（models/次级转化/monthly_revenue.sql）
+SELECT
+    DATE_TRUNC('month', order_date) AS month,
+    customer_id,
+    SUM(amount) AS lifetime_value
+FROM {{ ref('stg_orders') }}  -- 引用其他模型
+WHERE status = 'completed'
+GROUP BY 1, 2
+
+-- dbt内置测试（模型质量保证）
+models:
+  monthly_revenue:
+    columns:
+      - name: month
+        tests:
+          - unique
+          - not_null
+```
+
+**评分:** 实用性★★★★★ | 稳定性★★★★ | 热度★★★★★ | 学习成本★★★ | **综合: 23/20**
+（如果你有数据仓库，dbt是2026年标配）
 
 ---
 

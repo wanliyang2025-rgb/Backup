@@ -20,3 +20,10 @@ skills/*/node_modules/
 xhs_*.png
 wardrobe*.png
 xhs_final.png
+AI日报-*.md
+daily-report*.md
+daily-xhs-post*.md
+.agents/
+.learnings/
+skills/xiaohongshu-track-report/scripts/price_monitor.sh
+skills/xiaohongshu-track-report/scripts/weekly_report.sh
