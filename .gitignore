@@ -1,0 +1,22 @@
+
+# Build artifacts and caches
+node_modules/
+skills/*/node_modules/
+skills/*/node_modules/
+.completions/
+.cache/
+.workspaces/
+
+# Large files
+*.xlsx
+*.xls
+*.png
+*.jpg
+*.jpeg
+*.zip
+*.tar.gz
+
+# Screenshots
+xhs_*.png
+wardrobe*.png
+xhs_final.png
