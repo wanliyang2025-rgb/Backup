@@ -90,6 +90,15 @@
 | self-improving-agent | 记录学习、错误、修正，持续改进 |
 | task-status | 长时间任务状态更新，周期性心跳 |
 | smart-web-fetch | 智能网页抓取，Markdown 清洗，节省 Token |
+| ai-humanizer | AI 文本人性化，去除 AI 写作痕迹 |
+| auto-updater | 自动更新 OpenClaw 和技能（每日 cron） |
+| browser | 浏览器自动化（需用户授权） |
+| chrome-cdp | Chrome 调试协议交互（需用户授权） |
+| multi-search-engine | 多引擎搜索（17 个引擎，国内/国际） |
+| openclaw-tavily-search | Tavily 搜索备选方案 |
+| skill-vetter | Skill 安全审查，来源评估 |
+| 月度科目余额表处理 | 月度科目余额表自动化处理 |
+| 月度往来对账 | 月度往来对账核对（1299.02/1299.04） |
 
 ---
 
@@ -114,6 +123,65 @@
 | feishu-fetch-doc | 获取文档内容 |
 | feishu-update-doc | 更新文档 |
 | feishu-im-read | 读取聊天消息 |
+
+### lark-cli（飞书官方 CLI）
+- **安装状态：** ✅ 已安装 (v1.0.3)
+- **凭证：** 与 OpenClaw 共用同一套（App ID: cli_a93b3aa665789cc2）
+- **用户授权：** ✅ 已授权用户身份（LeonWan），有效期至 2026-04-10
+- **何时用：** 适合批量操作、脚本自动化、直接调用飞书 Open API
+- **常用命令：**
+  ```bash
+  lark-cli calendar +agenda                    # 查看日历
+  lark-cli contact +search-user --query "姓名"  # 搜索联系人
+  lark-cli api GET /open-apis/xxx              # 原生 API 调用
+  ```
+- **注意：** Token 2h 过期但会自动刷新，最长 7 天。
+
+---
+
+## 极空间 NAS (192.168.3.134)
+
+| 配置 | 值 |
+|------|-----|
+| 地址 | 192.168.3.134 |
+| SSH 端口 | 10000 |
+| WebDAV 端口 | 5005 |
+| 账号 | 18664974664 / Wly19940728 |
+| 管理后台 | http://192.168.3.134:5050 |
+
+⚠️ **必须加入备份项**：NAS 连接信息（地址/账号/密码/WebDAV路径）
+
+**登录管理后台方式：** 浏览器打开 http://192.168.3.134:5050，用账号密码登录后可修改SSH/WebDAV配置。
+
+**SSH 登录（两种方式）：**
+```bash
+ssh znas                              # 方式1：~/.ssh/config 已配置，免密（推荐）
+ssh 18664974664@192.168.3.134 -p 10000  # 方式2：直连密码方式（备选）
+```
+
+**WebDAV 访问：**
+```bash
+# 列出目录
+curl -X PROPFIND -u "18664974664:Wly19940728" \
+  -H "Depth: 1" \
+  "http://192.168.3.134:5005/sata1-18664974664/"
+
+# 下载文件
+curl -u "18664974664:Wly19940728" \
+  "http://192.168.3.134:5005/sata1-18664974664/文件名" -o 输出路径
+
+# 上传文件
+curl -u "18664974664:Wly19940728" \
+  -T 本地文件路径 \
+  "http://192.168.3.134:5005/sata1-18664974664/目标文件名"
+```
+
+**已知共享目录：**
+- `sata1-18664974664/` — 主存储（SATA，迅雷下载、WLY、iPhone备份等）
+- `nvme11-18664974664/` — NVMe SSD（缓存/下载盘）
+- `public/` — 公共文件夹
+- `sharetome/` — 共享给我
+- `共享文件/` — 共享文件
 
 ---
 
@@ -171,7 +239,7 @@
 | 配置 | 值 |
 |------|-----|
 | 地址 | http://localhost:8123 |
-| Token | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...（LeonWan提供，完整版在对话历史中）|
+| Token | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI4NjAzZGQ3NTQ0Mzc0OWRhYjBhYTZiMTE5ZTQ0ZTM1MiIsImlhdCI6MTc3NDIyMzE4OCwiZXhwIjoyMDg5NTgzMTg4fQ.3nanh3eeg39FVu6Dv0AtKH2JnDcgUtJtMUq6k8C10sg |
 
 **常用操作：**
 ```bash

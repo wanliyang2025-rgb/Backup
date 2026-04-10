@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "skills": {
+    "data-analyst": {
+      "version": "1.0.0",
+      "installedAt": 1773909372669
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1773913442803
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1773913565371
+    },
+    "ontology": {
+      "version": "1.0.4",
+      "installedAt": 1773913681415
+    },
+    "self-improving-agent": {
+      "version": "3.0.5",
+      "installedAt": 1773913756014
+    },
+    "automation-workflows": {
+      "version": "0.1.0",
+      "installedAt": 1773914823276
+    },
+    "task-status": {
+      "version": "1.0.0",
+      "installedAt": 1773993302877
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1773999914500
+    },
+    "openclaw-tavily-search": {
+      "version": "0.1.0",
+      "installedAt": 1774000321569
+    },
+    "multi-search-engine": {
+      "version": "2.0.1",
+      "installedAt": 1774000862989
+    },
+    "smart-web-fetch": {
+      "version": "1.0.0",
+      "installedAt": 1774017962098
+    },
+    "browser": {
+      "version": "1.0.0",
+      "installedAt": 1774078038413
+    },
+    "openclaw-backup": {
+      "version": "1.0.0",
+      "installedAt": 1774081922754
+    },
+    "obsidian-1-0-0": {
+      "version": "1.0.0",
+      "installedAt": 1774089736602
+    },
+    "xiaohongshu-mcp": {
+      "version": "1.0.0",
+      "installedAt": 1774089902260
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1774092541289
+    },
+    "git": {
+      "version": "1.0.8",
+      "installedAt": 1774105996293
+    },
+    "auto-updater": {
+      "version": "1.0.0",
+      "installedAt": 1774160221867
+    },
+    "ai-humanizer": {
+      "version": "2.1.0",
+      "installedAt": 1774363583442
+    },
+    "minimax-understand-image": {
+      "version": "1.0.3",
+      "installedAt": 1775104997820
+    },
+    "guantou-feishu-bot-connector": {
+      "version": "1.0.0",
+      "installedAt": 1775744966129
+    },
+    "test-runner": {
+      "version": "1.0.0",
+      "installedAt": 1775749278473
+    },
+    "github-actions-troubleshooting": {
+      "version": "1.0.0",
+      "installedAt": 1775749022555
+    },
+    "e2e-testing-patterns": {
+      "version": "1.0.0",
+      "installedAt": 1775749029565
+    },
+    "agent-evaluation": {
+      "version": "1.0.0",
+      "installedAt": 1775749082087
+    },
+    "bug-investigation": {
+      "version": "1.0.0",
+      "installedAt": 1775749142562
+    },
+    "code-review-assistant": {
+      "version": "1.0.0",
+      "installedAt": 1775749154049
+    },
+    "test-master": {
+      "version": "0.1.0",
+      "installedAt": 1775749203473
+    },
+    "playwright-skill": {
+      "version": "0.1.0",
+      "installedAt": 1775749209547
+    },
+    "test-generator": {
+      "version": "2.0.1",
+      "installedAt": 1775749262593
+    },
+    "openclaw-api-tester": {
+      "version": "1.0.0",
+      "installedAt": 1775749323834
+    },
+    "docker-essentials": {
+      "version": "1.0.0",
+      "installedAt": 1775749442004
+    },
+    "monitoring": {
+      "version": "1.0.0",
+      "installedAt": 1775749452800
+    },
+    "performance": {
+      "version": "0.1.0",
+      "installedAt": 1775749502380
+    }
+  }
+}
