@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "ai-image-generation": {
+      "source": "inference-sh/skills",
+      "sourceType": "github",
+      "computedHash": "e45c0ee94791e67e355130109fd827bd8b4bd0fb1d6b2ff8f782eb566d435174"
+    },
+    "chrome-cdp": {
+      "source": "pasky/chrome-cdp-skill",
+      "sourceType": "github",
+      "computedHash": "d9a2a1ff8b0df2a381a0ae630af0bfbc0bf642132d49aead946cf3724ecf5cb4"
+    }
+  }
+}
