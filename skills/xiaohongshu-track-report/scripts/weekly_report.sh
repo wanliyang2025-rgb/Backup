@@ -16,15 +16,16 @@ exec > "$LOG_FILE" 2>&1
 
 echo "=== 小红书周报任务开始: $(date) ==="
 
-# Step 1: 确保 Chrome 运行
-echo "[1/7] 检查 Chrome 状态..."
+# Step 1: 确保 Firefox 运行（Chrome 不可用，改用 Firefox CDP）
+echo "[1/7] 检查浏览器状态..."
 if ! curl -s http://localhost:9222/json/list > /dev/null 2>&1; then
-    echo "启动 Chrome..."
-    /opt/google/chrome/chrome \
+    echo "启动 Firefox (remote-debugging)..."
+    chromium-browser \
         --user-data-dir=/tmp/chrome-controlled \
         --remote-debugging-port=9222 \
         --no-sandbox \
-        --enable-features=WebMCPTesting \
+        --headless \
+        --disable-gpu \
         --window-size=1280,900 \
         > /dev/null 2>&1 &
     sleep 5
