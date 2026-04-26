@@ -19,9 +19,9 @@ tags: [AB测试, 实验统计学, 数据分析]
 
 ## Related
 
-- [[bi-dashboard-cockpit]] — 数据分析与指标可视化
-- [[consistency-dimension]] — 维度建模与数据分析
-- [[zhihu-ai-product-dev]] — AI 产品中的实验方法
+- [[BI大屏驾驶舱区分]] — 数据分析与指标可视化
+- [[一致性维度]] — 维度建模与数据分析
+- [[知乎AI赋能实践]] — AI 产品中的实验方法
 
 ## Sources
 

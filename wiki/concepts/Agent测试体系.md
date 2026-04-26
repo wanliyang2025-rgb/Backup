@@ -19,9 +19,9 @@ tags: [AI, Agent, 测试, 质量保障]
 
 ## Related
 
-- [[agent-engineering-guide]] — Agent 工程化的整体方法论
-- [[agent-harness]] — Agent 外围系统的可观测性设计
-- [[software-quality-management]] — 研发质量管理的广度视角
+- [[Agent工程实战指南]] — Agent 工程化的整体方法论
+- [[Agent Harness]] — Agent 外围系统的可观测性设计
+- [[研发质量管理全景]] — 研发质量管理的广度视角
 
 ## Sources
 

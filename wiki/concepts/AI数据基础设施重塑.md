@@ -4,7 +4,7 @@ description: AI Agents 如何从五个维度重塑数据基础设施，以及统
 source: https://mp.weixin.qq.com/s/XOMnWsmwBZCi_2_Ux5KblA
 author: 堵俊平（Datastrato 创始人兼 CEO）
 tags: [AI Agent, 数据基础设施, Agentic AI, 元数据, DataOps]
-related_to: [[agent-harness]] [[ai-high-quality-dataset]]
+related_to: [[Agent Harness]] [[AI高质量数据集]]
 created: 2026-04-26
 ---
 
@@ -40,8 +40,8 @@ AI Agents 正在从"回答问题"进化到"执行任务"，并开始接管数据
 
 ## Related
 
-- [[agent-harness]] — 同一个故事的技术侧：Harness 是 LLM 的操作系统，本文是从数据侧看 Agent 如何重塑数据平台
-- [[ai-high-quality-dataset]] — 数据工程侧，高质量数据集是 AI 能力的基石
+- [[Agent Harness]] — 同一个故事的技术侧：Harness 是 LLM 的操作系统，本文是从数据侧看 Agent 如何重塑数据平台
+- [[AI高质量数据集]] — 数据工程侧，高质量数据集是 AI 能力的基石
 
 ## Sources
 

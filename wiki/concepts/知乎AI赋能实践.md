@@ -4,7 +4,7 @@ description: 知乎"人机协同，知识驱动"全链路AI赋能体系，团队
 source: https://mp.weixin.qq.com/s/BJUbhueacFiZvPNrqRsxXw
 author: 侯容（知乎社区研发部 运营研发负责人）
 tags: [AI赋能产研, 人机协同, 知识管理, Agent, 产品研发, 企业数字化]
-related_to: [[agent-harness]] [[ai-agents-data-infrastructure]] [[harness-engineering-ontology]]
+related_to: [[Agent Harness]] [[AI数据基础设施重塑]] [[本体驱动Agent]]
 created: 2026-04-26
 ---
 
@@ -60,9 +60,9 @@ created: 2026-04-26
 
 ## Related
 
-- [[agent-harness]] — 人机协同的技术基础设施层
-- [[ai-agents-data-infrastructure]] — Agent 时代的数据平台视角
-- [[harness-engineering-ontology]] — 本体驱动的 Agent 可控执行，知识管理是核心
+- [[Agent Harness]] — 人机协同的技术基础设施层
+- [[AI数据基础设施重塑]] — Agent 时代的数据平台视角
+- [[本体驱动Agent]] — 本体驱动的 Agent 可控执行，知识管理是核心
 
 ## Sources
 

@@ -3,7 +3,7 @@ title: AI时代高质量数据集的四个关键本质
 created: 2026-04-12
 source: https://mp.weixin.qq.com/s/MDc8wE0Wcf1ajKYyUI098g
 tags: [AI, 数据工程, 大模型]
-related_to: [[karpathy-llm-wiki-workflow]]
+related_to: [[Karpathy知识库工作流]]
 ---
 
 # AI时代高质量数据集的四个关键本质
@@ -26,9 +26,9 @@ related_to: [[karpathy-llm-wiki-workflow]]
 
 ## Related
 
-- [[karpathy-llm-wiki-workflow]]（LLM Wiki 工作流 — 知识管理同源）
+- [[Karpathy知识库工作流]]（LLM Wiki 工作流 — 知识管理同源）
 
 ## Sources
 
 - [AI时代高质量数据集的四个关键本质](https://mp.weixin.qq.com/s/MDc8wE0Wcf1ajKYyUI098g)（人月聊IT）
-- 原始存档：sources/articles/2026-04-12-ai-high-quality-dataset.md
+- 原始存档：sources/articles/20260412-AI高质量数据集.md

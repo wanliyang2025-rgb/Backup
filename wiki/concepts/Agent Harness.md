@@ -3,7 +3,7 @@ title: Agent Harness
 description: LLM 智能体的软件基础设施层，涵盖编排循环、工具、记忆、上下文管理等 12 个核心组件
 source: https://blog.qiaomu.ai/2026-04-18-JgypqM
 tags: [AI Agent, Agent Harness, LLM, 工程实践, 架构]
-related_to: [[karpathy-llm-wiki-workflow]] [[ai-high-quality-dataset]]
+related_to: [[Karpathy知识库工作流]] [[AI高质量数据集]]
 created: 2026-04-26
 ---
 
@@ -51,8 +51,8 @@ LangChain 仅通过改进 harness（模型和权重完全不变），在 Termina
 
 ## Related
 
-- [[karpathy-llm-wiki-workflow]] — 知识管理方法论，AI 辅助工作流
-- [[ai-high-quality-dataset]] — 数据工程侧，模型能力的基础
+- [[Karpathy知识库工作流]] — 知识管理方法论，AI 辅助工作流
+- [[AI高质量数据集]] — 数据工程侧，模型能力的基础
 
 ## Sources
 

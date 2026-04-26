@@ -20,9 +20,9 @@ tags: [AI, Agent, Anthropic, 工程实践]
 
 ## Related
 
-- [[agent-harness]] — Agent 外围系统的设计
-- [[harness-engineering-ontology]] — 本体驱动的 Agent 可控执行
-- [[ai-agents-data-infrastructure]] — AI Agents 与数据基础设施
+- [[Agent Harness]] — Agent 外围系统的设计
+- [[本体驱动Agent]] — 本体驱动的 Agent 可控执行
+- [[AI数据基础设施重塑]] — AI Agents 与数据基础设施
 
 ## Sources
 

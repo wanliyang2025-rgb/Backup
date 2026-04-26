@@ -3,7 +3,7 @@ title: BI / 数据大屏 / 管理驾驶舱 三者区分
 description: 三个完全不同物种的本质区分：找答案 vs 讲故事 vs 下指令，以及真正的管理驾驶舱三要素
 source: https://mp.weixin.qq.com/s/849eW01KxtxxWRC7dYdvPQ
 tags: [数据可视化, BI, 管理驾驶舱, 数据大屏, 企业数字化, 业务决策]
-related_to: [[ai-agents-data-infrastructure]] [[consistency-dimension]]
+related_to: [[AI数据基础设施重塑]] [[一致性维度]]
 created: 2026-04-26
 ---
 
@@ -54,8 +54,8 @@ created: 2026-04-26
 
 ## Related
 
-- [[ai-agents-data-infrastructure]] — Agent 时代数据平台，Agent 正在成为数据首要消费者，与驾驶舱的"人"形成对比
-- [[consistency-dimension]] — 数据仓库维度建模，两者同属数据基础设施层面
+- [[AI数据基础设施重塑]] — Agent 时代数据平台，Agent 正在成为数据首要消费者，与驾驶舱的"人"形成对比
+- [[一致性维度]] — 数据仓库维度建模，两者同属数据基础设施层面
 
 ## Sources
 

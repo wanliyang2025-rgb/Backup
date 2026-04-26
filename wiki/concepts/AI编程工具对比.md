@@ -19,9 +19,9 @@ tags: [AI编程工具, Cursor, Claude Code, Codex CLI, Gemini CLI, Copilot]
 
 ## Related
 
-- [[agent-engineering-guide]] — Claude Code 底层的 Agent 架构
-- [[agent-harness]] — Harness Engineering 概念
-- [[zhihu-ai-product-dev]] — AI 工具在企业中的落地
+- [[Agent工程实战指南]] — Claude Code 底层的 Agent 架构
+- [[Agent Harness]] — Harness Engineering 概念
+- [[知乎AI赋能实践]] — AI 工具在企业中的落地
 
 ## Sources
 

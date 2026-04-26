@@ -4,7 +4,7 @@ description: 用 Ontology 为 Agent Harness 提供语义基础设施，实现约
 source: https://mp.weixin.qq.com/s/QBSYdyOtxnPmzpI26BnNWQ
 author: 周士雄（悦点科技 研发负责人）
 tags: [AI Agent, Harness Engineering, Ontology, Agent可控性, 本体建模, 语义底座]
-related_to: [[agent-harness]] [[ai-agents-data-infrastructure]]
+related_to: [[Agent Harness]] [[AI数据基础设施重塑]]
 created: 2026-04-26
 ---
 
@@ -64,8 +64,8 @@ Agent：在既定义业务地图中推理和执行
 
 ## Related
 
-- [[agent-harness]] — 同系列前篇：Harness 的 12 个组件，纯技术视角
-- [[ai-agents-data-infrastructure]] — 数据侧视角：Agent 成为数据首要消费者，需要适配的数据平台
+- [[Agent Harness]] — 同系列前篇：Harness 的 12 个组件，纯技术视角
+- [[AI数据基础设施重塑]] — 数据侧视角：Agent 成为数据首要消费者，需要适配的数据平台
 
 ## Sources
 

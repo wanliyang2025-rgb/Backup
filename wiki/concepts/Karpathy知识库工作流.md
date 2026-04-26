@@ -4,7 +4,7 @@ description: Andrej Karpathy 的 LLM 知识库编译工作流
 source: https://x.com/karpathy/status/2039805659525644595
 created: 2026-04-12
 tags: [LLM, 知识管理, Obsidian, 工作流, AI]
-related_to: [[andrej-karpathy-blog]] [[index|🏠 回到索引]]
+related_to: [[Andrej Karpathy博客]] [[index|🏠 回到索引]]
 ---
 
 # Karpathy LLM Wiki 工作流
@@ -67,12 +67,12 @@ Agent 定期扫描 Wiki，检查：
 - Lint/健康检查 Agent（检查链接完整性、格式规范）
 - 反向链接自动发现（目前手动维护 `related_to`）
 
-**关联主题：** 一致性维度（[[consistency-dimension]]）虽然是数据工程内容，但其"维度版本化管理"思路与 Wiki 知识版本化相通。
+**关联主题：** 一致性维度（[[一致性维度]]）虽然是数据工程内容，但其"维度版本化管理"思路与 Wiki 知识版本化相通。
 
 ---
 
 ## 参考文献
 
-- [[andrej-karpathy-blog|Karpathy Blog]] — Karpathy 本人博客
+- [[Andrej Karpathy博客|Karpathy Blog]] — Karpathy 本人博客
 - [Reddit 讨论：Implemented Karpathy's LLM Wiki Workflow](https://www.reddit.com/r/ObsidianMD/comments/1sdbq01/implemented_karpathys_llm_knowledge_base_workflow/)
 - [MindStudio: What Is Andrej Karpathy's LLM Wiki?](https://www.mindstudio.ai/blog/andrej-karpathy-llm-wiki-knowledge-base-claude-code/)
