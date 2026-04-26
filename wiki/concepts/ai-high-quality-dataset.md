@@ -1,0 +1,34 @@
+---
+title: AI时代高质量数据集的四个关键本质
+created: 2026-04-12
+source: https://mp.weixin.qq.com/s/MDc8wE0Wcf1ajKYyUI098g
+tags: [AI, 数据工程, 大模型]
+related_to: [[karpathy-llm-wiki-workflow]]
+---
+
+# AI时代高质量数据集的四个关键本质
+
+## Overview
+
+本文探讨AI大模型时代"高质量数据集"成为焦点的背景，分析其与传统数据质量管理的区别，阐述为什么这个概念突然变得重要。
+
+**核心问题**：高质量数据集 = 传统数据质量管理？还是新瓶装旧酒？
+
+**答案**：新场景驱动的新需求，不仅仅是旧酒换新瓶。
+
+## Key Claims
+
+- AI大模型来了，需要"数据语料"喂给模型，传统数据集无法直接满足需求
+- 高质量数据集本质：**AI时代的专属需求**，不只是数据准确性/一致性
+- 传统数据治理的"数据质量管理"解决的是人读数据的质量问题
+- 高质量数据集要解决的是**机器（AI）读数据**的质量问题
+- 这两个问题看似相似，但评判标准和处理方法完全不同
+
+## Related
+
+- [[karpathy-llm-wiki-workflow]]（LLM Wiki 工作流 — 知识管理同源）
+
+## Sources
+
+- [AI时代高质量数据集的四个关键本质](https://mp.weixin.qq.com/s/MDc8wE0Wcf1ajKYyUI098g)（人月聊IT）
+- 原始存档：sources/articles/2026-04-12-ai-high-quality-dataset.md

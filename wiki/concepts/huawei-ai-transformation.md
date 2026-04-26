@@ -1,0 +1,37 @@
+---
+title: 华为AI赋能企业数智化转型
+created: 2026-04-12
+source: https://mp.weixin.qq.com/s/p32iKQAGy_koqkYQO6WVzA
+tags: [AI, 企业数字化, 华为, 智能制造]
+related_to: [[ai-high-quality-dataset]] [[karpathy-llm-wiki-workflow]] [[index|🏠 回到索引]]
+---
+
+# 华为AI赋能企业数智化转型
+
+## Overview
+
+华为流程IT总裁陶景文提出企业AI落地核心框架"三层五阶八步"，并详解AI赋能智能制造的四大融合维度。
+
+## 核心框架：三层五阶八步
+
+| 层次 | 聚焦 |
+|------|------|
+| 第一层：重新定义智慧业务 | 战略对齐、业务流程和组织模式转型 |
+| 第二层：AI开发与交付 | 数据治理、IT改造、能力建设 |
+| 第三层：持续运营智能应用 | 性能维护、价值提取 |
+
+## AI赋能智能制造：四大融合维度
+
+1. **AI + Know-How**：工业知识融入AI，形成领域专家系统
+2. **AI + 岗位**：AI辅助一线员工提升效率
+3. **AI + 应用**：嵌入企业核心应用（智能APP、AI引擎）
+4. **AI + 装备**：设备自诊断、自学习、自建模
+
+## 感知-分析-决策自动化
+
+制造业AI三环：**感知**（数据获取）→ **分析**（模式识别）→ **决策**（自动优化）
+
+## Related
+
+- [[ai-high-quality-dataset]]（AI时代高质量数据集——AI应用的数据基础）
+- [[karpathy-llm-wiki-workflow]]（Karpathy LLM Wiki工作流——知识管理同源议题）
