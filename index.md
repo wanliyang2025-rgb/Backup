@@ -17,12 +17,22 @@
 - [2026-04-26] [[ai-agents-data-infrastructure|AI Agents 重塑数据基础设施]] — Agentic AI 时代的数据平台五大转变
 - [2026-04-26] [[agent-harness|Agent Harness]] — LLM 智能体软件基础设施（12组件架构）
 - [2026-04-12] [[consistency-dimension|一致性维度]] — 企业级数据仓库维度建模方法论
+- [2026-04-27] [[agent-engineering-guide|Anthropic Agent 工程实战指南]] — 从入门到生产的 Agent 全流程架构设计、工具开发、上下文管理
+- [2026-04-27] [[agent-testing-system|AI Agent 测试体系]] — 四层测试方法论：原子工具/决策逻辑/E2E/安全
+- [2026-04-27] [[ai-coding-tools-comparison|AI 编程工具对比与组合策略]] — Claude Code/Cursor/Copilot/Codex CLI/Gemini CLI 8个月实战
+- [2026-04-27] [[ab-testing-statistics|AB 测试与实验统计学实战]] — AA 测试标定 AB 测试的统计学方法论
+- [2026-04-27] [[data-burying-practice|数据埋点实践与方法论]] — 埋点机制/方案/实践全流程
 
 ## 📰 原文存档 (sources/articles/)
 
 - [2026-04-12] [[sources/articles/2026-04-12-andrej-karpathy-blog]]
 - [2026-04-12] [[sources/articles/2026-04-12-ai-high-quality-dataset]]
 - [2026-04-12] [[sources/articles/2026-04-12-huawei-ai-transformation]]
+- [2026-04-27] [[sources/articles/2026-04-27-anthropic-agent-engineering-guide]]
+- [2026-04-27] [[sources/articles/2026-04-27-ai-agent-testing]]
+- [2026-04-27] [[sources/articles/2026-04-27-ai-coding-tools-comparison]]
+- [2026-04-27] [[sources/articles/2026-04-27-ab-testing-statistics]]
+- [2026-04-27] [[sources/articles/2026-04-27-data-burying-practice]]
 
 ## ✂️ 裁剪内容 (07-Clippings/)
 

@@ -8,3 +8,8 @@
 2026-04-26 13:10 | ingest | ai-agents-data-infrastructure | [当 OpenClaw 遇见数据：AI Agents 如何重塑下一代数据基础设施](https://mp.weixin.qq.com/s/XOMnWsmwBZCi_2_Ux5KblA)
 2026-04-26 12:27 | ingest | agent-harness | [Agent Harness：让AI从聊天机器人变成真正的智能体](https://blog.qiaomu.ai/2026-04-18-JgypqM)
 2026-04-12 17:52 | ingest | ai-high-quality-dataset | [AI时代高质量数据集的四个关键本质](https://mp.weixin.qq.com/s/MDc8wE0Wcf1ajKYyUI098g)
+2026-04-27 01:02 | ingest | agent-engineering-guide | [Anthropic Agent 工程实战指南：从入门到生产落地](https://www.cnblogs.com/cczlovexw/p/19695231)
+2026-04-27 01:02 | ingest | agent-testing-system | [《从概念到落地：AI Agent 的工程化实践与测试体系构建》](https://cloud.tencent.com/developer/article/2634033)
+2026-04-27 01:02 | ingest | ai-coding-tools-comparison | [5 款 AI 编程工具实测对比：为什么只选一个是错的](https://www.heyuan110.com/zh/posts/ai/2026-04-03-claude-code-vs-cursor-vs-copilot/)
+2026-04-27 01:02 | ingest | ab-testing-statistics | [关于AA测试和AB测试的一些思考](https://blog.tsingjyujing.com/ml/recsys/ab_testing)
+2026-04-27 01:02 | ingest | data-burying-practice | [产品经理必看：一文秒懂数据埋点](https://cloud.tencent.com/developer/article/2368162)
